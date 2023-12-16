@@ -40,27 +40,6 @@ router.get("/", eAdmin, isAdmin, async (req, res) => {
   }
 });
 
-router.post("/meu-cadastrar", async (req, res) => {
-    var data = req.body;
-    data.password_hash = await bcrypt.hash(data.password_hash, 6);
-
-    await db.Users.create(data)
-        .then(() => {
-            return res.json({
-                message: 'Usuário cadastro!',
-            })
-        }).catch(() => {
-            // if (data.email.includes) {
-            //     return res.status(400).json({
-            //         mensagem: "Esse email já foi cadastrado!"
-            //     });
-            // }
-            return res.status(400).json({
-                mensagem: "Erro: Usuário não cadastrado!"
-            });
-        })
-})
-
 router.post("/cadastro-completo", async (req, res) => {
     const t = await db.sequelize.transaction(); // Inicia uma transação
 
