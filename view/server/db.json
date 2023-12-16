@@ -1,0 +1,28 @@
+{
+    "users": [
+          {
+      "name": "João",
+      "email": "joao@example.com",
+      "perfil": "ADMINISTRADOR",
+      "status": "ATIVO"
+    },
+    {
+      "name": "Maria",
+      "email": "maria@example.com",
+      "perfil": "PRODUÇÃO",
+      "status": "INATIVO"
+    },
+    {
+      "name": "vitor",
+      "email": "vitor@example.com",
+      "perfil": "REPRESENTANTE COMERCIAL",
+      "status": "INATIVO"
+    },
+    {
+      "name": "Mario",
+      "email": "mario@example.com",
+      "perfil": "REPRESENTANTE COMERCIAL",
+      "status": "INATIVO"
+    }
+    ]
+}
